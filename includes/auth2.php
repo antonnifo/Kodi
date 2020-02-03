@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-if(!isset($_SESSION["national_id"])){
-    header("Location: ../public/signin.php");
+if(!isset($_SESSION["id_no"])){
+    header("Location: ../tenant/signin.php");
     exit(); 
 
 }
