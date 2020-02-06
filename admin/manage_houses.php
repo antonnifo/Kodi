@@ -26,7 +26,7 @@
 <div class="w3l-table-info agile_info_shadow">
 <input type="text" id="myInput" placeholder="Search..." title="Type in  something" class="noPrint" >
 <button type="button" class="btn btn-primary btn-flat btn-pri" onclick="window.print()" id="noPrint"><i class="fa fa-print" aria-hidden="true"></i> Print</button>
-
+<a href="add_house.php"class="btn btn-primary btn-flat btn-pri" id="noPrint"> <i class="fa fa-home"></i> Add House</a>
 <table id="table-two-axis" class="two-axis">
 <thead>
     <tr>
@@ -68,8 +68,8 @@
                         <td><?php echo $row["reg_date"]; ?></td>
                         
                 
-                        <td id="noPrint"><a href="edit_case.php?id=<?php echo $row["case_id"]; ?>"class="btn btn-flat btn-pri btn-primary"> <i class="fa fa-pencil"></i> Edit</a> </td>
-                        <td id="noPrint"><a href="delete_case.php?id=<?php echo $row["case_id"]; ?>"class="btn btn-flat btn-pri btn-danger"> <i class="fa fa-trash"></i> Delete </a> </td>
+                        <td id="noPrint"><a href="#"class="btn btn-flat btn-pri btn-primary"> <i class="fa fa-pencil"></i> Edit</a> </td>
+                        <td id="noPrint"><a href="delete_house.php?id=<?php echo $row["id"]; ?>"class="btn btn-flat btn-pri btn-danger"> <i class="fa fa-trash"></i> Delete </a> </td>
                       </tr>
                        <?php $count++;
                     } ?>

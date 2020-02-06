@@ -27,7 +27,7 @@
 <input type="text" id="myInput" placeholder="Search..." title="Type in  something" class="noPrint" >
 <button type="button" class="btn btn-primary btn-flat btn-pri" onclick="window.print()" id="noPrint"><i class="fa fa-print" aria-hidden="true"></i> Print</button>
 <!-- <button type="button" class="btn btn-primary btn-flat btn-pri" id="noPrint"><i class="fa fa-user" aria-hidden="true"></i>Add Tenant</button> -->
-<a href="add_rent.php.php"class="btn btn-primary btn-flat btn-pri" id="noPrint"> <i class="fa fa-user"></i> Add rent</a>
+<a href="add_rent.php.php"class="btn btn-primary btn-flat btn-pri" id="noPrint"> <i class="fa fa-money"></i> Add rent</a>
 <table id="table-two-axis" class="two-axis">
 <thead>
     <tr>
@@ -62,8 +62,8 @@
              
                         <td><?php echo $row["added_by"]; ?></td>                
                         <td><?php echo $row["date"]; ?></td>                               
-                        <td id="noPrint"><a href="edit_accused.php?id=<?php echo $row["adccused_id"]; ?>"class="btn btn-flat btn-pri btn-primary"> <i class="fa fa-pencil"></i> Edit</a> </td>
-                        <td id="noPrint"><a href="delete_accused.php?id=<?php echo $row["accused_id"]; ?>"class="btn btn-flat btn-pri btn-danger"> <i class="fa fa-trash"></i> Delete </a> </td>
+                        <td id="noPrint"><a href="#"class="btn btn-flat btn-pri btn-primary"> <i class="fa fa-pencil"></i> Edit</a> </td>
+                        <td id="noPrint"><a href="delete_rent.php?id=<?php echo $row["id"]; ?>"class="btn btn-flat btn-pri btn-danger"> <i class="fa fa-trash"></i> Delete </a> </td>
                       </tr>
                        <?php $count++;
                     } ?>

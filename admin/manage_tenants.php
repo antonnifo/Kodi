@@ -64,8 +64,8 @@
                         <td><?php echo $row["join_date"]; ?></td>                
                         <td><?php echo $row["leave_date"]; ?></td>                
                         <td><?php echo $row["house_no"]; ?></td>                
-                        <td id="noPrint"><a href="edit_accused.php?id=<?php echo $row["adccused_id"]; ?>"class="btn btn-flat btn-pri btn-primary"> <i class="fa fa-pencil"></i> Edit</a> </td>
-                        <td id="noPrint"><a href="delete_accused.php?id=<?php echo $row["accused_id"]; ?>"class="btn btn-flat btn-pri btn-danger"> <i class="fa fa-trash"></i> Delete </a> </td>
+                        <td id="noPrint"><a href="#"class="btn btn-flat btn-pri btn-primary"> <i class="fa fa-pencil"></i> Edit</a> </td>
+                        <td id="noPrint"><a href="delete_tenant.php?id=<?php echo $row["id"]; ?>"class="btn btn-flat btn-pri btn-danger"> <i class="fa fa-trash"></i> Delete </a> </td>
                       </tr>
                        <?php $count++;
                     } ?>
